@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/FlagCNN/static/css/main.d1b05096.chunk.css",
-    "main.js": "/FlagCNN/static/js/main.f3b158ee.chunk.js",
-    "main.js.map": "/FlagCNN/static/js/main.f3b158ee.chunk.js.map",
+    "main.js": "/FlagCNN/static/js/main.bc0ce425.chunk.js",
+    "main.js.map": "/FlagCNN/static/js/main.bc0ce425.chunk.js.map",
     "runtime-main.js": "/FlagCNN/static/js/runtime-main.e56dae21.js",
     "runtime-main.js.map": "/FlagCNN/static/js/runtime-main.e56dae21.js.map",
     "static/js/2.123af653.chunk.js": "/FlagCNN/static/js/2.123af653.chunk.js",
     "static/js/2.123af653.chunk.js.map": "/FlagCNN/static/js/2.123af653.chunk.js.map",
     "index.html": "/FlagCNN/index.html",
-    "precache-manifest.d7f21a91093083d3af2fe7b20783c7de.js": "/FlagCNN/precache-manifest.d7f21a91093083d3af2fe7b20783c7de.js",
+    "precache-manifest.e132049e8ed50e459ba3c931e102d0f6.js": "/FlagCNN/precache-manifest.e132049e8ed50e459ba3c931e102d0f6.js",
     "service-worker.js": "/FlagCNN/service-worker.js",
     "static/css/main.d1b05096.chunk.css.map": "/FlagCNN/static/css/main.d1b05096.chunk.css.map",
     "static/js/2.123af653.chunk.js.LICENSE.txt": "/FlagCNN/static/js/2.123af653.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.e56dae21.js",
     "static/js/2.123af653.chunk.js",
     "static/css/main.d1b05096.chunk.css",
-    "static/js/main.f3b158ee.chunk.js"
+    "static/js/main.bc0ce425.chunk.js"
   ]
 }
