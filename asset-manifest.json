@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/FlagCNN/static/css/main.d1b05096.chunk.css",
-    "main.js": "/FlagCNN/static/js/main.35f8ee8b.chunk.js",
-    "main.js.map": "/FlagCNN/static/js/main.35f8ee8b.chunk.js.map",
+    "main.js": "/FlagCNN/static/js/main.c28953d2.chunk.js",
+    "main.js.map": "/FlagCNN/static/js/main.c28953d2.chunk.js.map",
     "runtime-main.js": "/FlagCNN/static/js/runtime-main.e56dae21.js",
     "runtime-main.js.map": "/FlagCNN/static/js/runtime-main.e56dae21.js.map",
-    "static/js/2.123af653.chunk.js": "/FlagCNN/static/js/2.123af653.chunk.js",
-    "static/js/2.123af653.chunk.js.map": "/FlagCNN/static/js/2.123af653.chunk.js.map",
+    "static/js/2.9fe3b46c.chunk.js": "/FlagCNN/static/js/2.9fe3b46c.chunk.js",
+    "static/js/2.9fe3b46c.chunk.js.map": "/FlagCNN/static/js/2.9fe3b46c.chunk.js.map",
     "index.html": "/FlagCNN/index.html",
-    "precache-manifest.f2c625de5076d9ce12d7c88ae14c9b4b.js": "/FlagCNN/precache-manifest.f2c625de5076d9ce12d7c88ae14c9b4b.js",
+    "precache-manifest.bc573e59376f331aa155edcfe5c6c37d.js": "/FlagCNN/precache-manifest.bc573e59376f331aa155edcfe5c6c37d.js",
     "service-worker.js": "/FlagCNN/service-worker.js",
     "static/css/main.d1b05096.chunk.css.map": "/FlagCNN/static/css/main.d1b05096.chunk.css.map",
-    "static/js/2.123af653.chunk.js.LICENSE.txt": "/FlagCNN/static/js/2.123af653.chunk.js.LICENSE.txt"
+    "static/js/2.9fe3b46c.chunk.js.LICENSE.txt": "/FlagCNN/static/js/2.9fe3b46c.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/FlagCNN/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e56dae21.js",
-    "static/js/2.123af653.chunk.js",
+    "static/js/2.9fe3b46c.chunk.js",
     "static/css/main.d1b05096.chunk.css",
-    "static/js/main.35f8ee8b.chunk.js"
+    "static/js/main.c28953d2.chunk.js"
   ]
 }
