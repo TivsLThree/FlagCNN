@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/FlagCNN/static/css/main.d1b05096.chunk.css",
+    "main.js": "/FlagCNN/static/js/main.569fa5eb.chunk.js",
+    "main.js.map": "/FlagCNN/static/js/main.569fa5eb.chunk.js.map",
+    "runtime-main.js": "/FlagCNN/static/js/runtime-main.e56dae21.js",
+    "runtime-main.js.map": "/FlagCNN/static/js/runtime-main.e56dae21.js.map",
+    "static/js/2.9fe3b46c.chunk.js": "/FlagCNN/static/js/2.9fe3b46c.chunk.js",
+    "static/js/2.9fe3b46c.chunk.js.map": "/FlagCNN/static/js/2.9fe3b46c.chunk.js.map",
+    "index.html": "/FlagCNN/index.html",
+    "precache-manifest.09206038fd2380ab280ea79d850c19e4.js": "/FlagCNN/precache-manifest.09206038fd2380ab280ea79d850c19e4.js",
+    "service-worker.js": "/FlagCNN/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/FlagCNN/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.9fe3b46c.chunk.js.LICENSE.txt": "/FlagCNN/static/js/2.9fe3b46c.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/FlagCNN/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e56dae21.js",
+    "static/js/2.9fe3b46c.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.569fa5eb.chunk.js"
+  ]
+}
