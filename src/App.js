@@ -2,8 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 const tf = require('@tensorflow/tfjs');
-const buildPath = (false) ? "/flag_cnn" : "";
-const names = ["canada", "usa", "china", "malaysia", "cuba", "australia"];
+const buildPath = (false) ? "http://localhost:3000/FlagCNN"  : "https://TivsLThree.github.io/FlagCNN/";
+const names = ["australia","canada","china","cuba","japan","malaysia","monaco","peru","poland","singapore","usa","vietnam"];
 class App extends React.Component {
   constructor(){
     super()
@@ -12,9 +12,10 @@ class App extends React.Component {
   componentWillUnmount() {
 
   }
-  componentDidMount() {
-    this.load_model();
+componentDidMount() {
+  this.loadModel();
     //this.guess = null;
+    this.old = "";
     this.bool = false;
     this.canvas = false; this.ctx = false; this.flag = false;
         this.prevX = 0;
@@ -69,8 +70,12 @@ class App extends React.Component {
   }
 
   handleClick =(e)=> {
-
-    if(e.shiftKey)
+    if(e.button == 2)
+    {
+      this.old = this.x;
+      this.x = `rgba(255,255,255,255)`
+    }
+    if(e.shiftKey && e.button != 2)
     {
       var pd = this.ctx.getImageData(e.offsetX, e.offsetY, 1, 1).data;
       this.x = `rgba(${pd[0]},${pd[1]},${pd[2]},255)`
@@ -80,7 +85,10 @@ class App extends React.Component {
    // console.log(e)
   }
   handleRelease =(e) =>{
-
+    if(e.button == 2)
+    {
+      this.x = this.old;
+    }
     this.bool = false;
     var res = null;
     if(this.model != null)
@@ -89,10 +97,11 @@ class App extends React.Component {
       this.ctx.drawImage(img, 0,0);
       var imgData = this.ctx.getImageData(0,0,this.w,this.h);
       //console.log(imgData.data[0])
-      img = tf.browser.fromPixels(imgData)
-      img = img.reshape([1,520,920,3])
+      img = tf.browser.fromPixels(imgData).resizeBilinear([23,13])
+      img = img.reshape([1,13,23,3])
       res = this.model.predict(img)
       var guess = res.dataSync();
+      console.log(guess);
       var index = guess.reduce((iMax, x, i, arr) => x > arr[iMax] ? i : iMax, 0);
 
       console.log(names[index])
@@ -107,21 +116,20 @@ class App extends React.Component {
       Math.floor(e.offsetY / this.boxSize) * this.boxSize,
       this.boxSize, this.boxSize);
   }
-  async load_model() {
-    var path = buildPath + "/resources/model/model.json";
-    this.model = await tf.loadLayersModel(path);
-  }
   //   <div style="position:absolute;top:20%;left:83%;">Eraser</div>
-
+async loadModel() {
+  var path = buildPath + "/resources/model/model.json";
+  this.model = await tf.loadLayersModel(path);
+}
 render () {
 
   return (
     <div className="App" onLoad = {this.load}>
-    <canvas id="can" width="920" height="520" style={{position:"absolute",top:"8%",left:"10%",border:"2px solid"}}></canvas>
+    <canvas id="can" width="920" height="520" onContextMenu={(e) => e.preventDefault()} style={{position:"absolute",top:"8%",left:"10%",border:"2px solid"}}></canvas>
     <div>{this.state.guess}</div>
-    <canvas id="can2" width="64" height="64" style={{position:"absolute",top:"8%",left:"90%",border:"2px solid"}}></canvas>
+    <canvas id="can2" width="64" height="64" onContextMenu={(e) => e.preventDefault()} style={{position:"absolute",top:"8%",left:"90%",border:"2px solid"}}></canvas>
 
-    <div style={{position:"absolute",top:"15%",left:"83%"}}>Choose Color
+    <div style={{position:"absolute",top:"15%",left:"83%"}}>Choose Color, Right click to erase.
 
       <p>Shift-click on a color on the canvas to color pick it, or just click on the color wheel!</p></div>
     </div>
