@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {Container, Row, Col, Popover, OverlayTrigger, Button} from 'react-bootstrap'
+//import Image from 'react'
 const tf = require('@tensorflow/tfjs');
 const buildPath = (false) ? "http://localhost:3000/FlagCNN"  : "https://TivsLThree.github.io/FlagCNN/";
 const names = ["australia","canada","china","cuba","japan","malaysia","monaco","peru","poland","singapore","usa","vietnam"];
@@ -8,7 +10,15 @@ class App extends React.Component {
   constructor(){
     super()
         this.state = {guess: "Start drawing a flag and I'll try to guess it!"};
-  }
+        this.countries = [];
+        names.map((name) =><Row><this.Country name={names.toString()}/></Row>);
+      }
+
+  Country = ({name, p}) => (
+  <div>
+      {name}
+  </div>
+);
   componentWillUnmount() {
 
   }
@@ -124,15 +134,30 @@ async loadModel() {
 render () {
 
   return (
-    <div className="App" onLoad = {this.load}>
-    <canvas id="can" width="920" height="520" onContextMenu={(e) => e.preventDefault()} style={{position:"absolute",top:"8%",left:"10%",border:"2px solid"}}></canvas>
-    <div>{this.state.guess}</div>
-    <canvas id="can2" width="64" height="64" onContextMenu={(e) => e.preventDefault()} style={{position:"absolute",top:"8%",left:"90%",border:"2px solid"}}></canvas>
+    <Container className="App" onLoad = {this.load}>
+      <Row>
+        <Col sm={10}>
+          <canvas id="can" width="920" height="520" onContextMenu={(e) => e.preventDefault()} style={{border:"2px solid"}}></canvas>
+          {this.state.guess}
+        </Col>
+        <Col sm={2}>
+          <canvas id="can2" width="64" height="64" onContextMenu={(e) => e.preventDefault()} style={{border:"2px solid"}}></canvas>
+            <Row>
+              Choose Color, Right click to erase.
+              <p>Shift-click on a color on the canvas to color pick it, or just click on the color wheel!</p>
 
-    <div style={{position:"absolute",top:"15%",left:"83%"}}>Choose Color, Right click to erase.
+          </Row>
+          <Col sm={1}>
+          <div>
+            {this.countries}
+          </div>
+          </Col>
+          <Col sm ={1}>
+          </Col>
+        </Col>
+      </Row>
 
-      <p>Shift-click on a color on the canvas to color pick it, or just click on the color wheel!</p></div>
-    </div>
+    </Container>
   );
 }
 }
