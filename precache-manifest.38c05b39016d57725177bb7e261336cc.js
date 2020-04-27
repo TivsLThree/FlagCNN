@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8b99867c813135818a0dabf5da5329de",
+    "revision": "d11c92bc2906257693794c5bc0d2b994",
     "url": "/FlagCNN/index.html"
   },
   {
-    "revision": "604f9fec7f25441b9fbd",
+    "revision": "ef2b15ac86dcf45904bb",
     "url": "/FlagCNN/static/css/main.d1b05096.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FlagCNN/static/js/2.06881b8d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "604f9fec7f25441b9fbd",
-    "url": "/FlagCNN/static/js/main.e4c331c7.chunk.js"
+    "revision": "ef2b15ac86dcf45904bb",
+    "url": "/FlagCNN/static/js/main.24c34174.chunk.js"
   },
   {
     "revision": "7c2e61c559a4b9df9d20",
