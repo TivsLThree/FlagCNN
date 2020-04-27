@@ -11,7 +11,7 @@ class App extends React.Component {
     super()
         this.state = {guess: "Start drawing a flag and I'll try to guess it!"};
         this.countries = [];
-        names.map((name) =><Row><this.Country name={names.toString()}/></Row>);
+        this.countries = names.map((name) =><Row><this.Country name={name.toString()}/></Row>);
       }
 
   Country = ({name, p}) => (
