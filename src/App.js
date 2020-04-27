@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {Container, Row, Col, Popover, OverlayTrigger, Button} from 'react-bootstrap'
+import {Container, Row, Col} from 'react-bootstrap'
 //import Image from 'react'
 const tf = require('@tensorflow/tfjs');
 const buildPath = (false) ? "http://localhost:3000/FlagCNN"  : "https://TivsLThree.github.io/FlagCNN/";
@@ -11,14 +11,14 @@ class App extends React.Component {
     super()
         this.state = {guess: "Start drawing a flag and I'll try to guess it!"};
         this.countries = [];
-        this.countries = names.map((name, index) =><Row><this.Country name={name.toString()} key = {index}/></Row>);
+        for (var i = 0; i < names.length; i++)
+        {
+          this.countries.push(
+            (<Row key = {i}>{names[i].toString()} </Row>)
+          )
+        }
       }
 
-  Country = ({name}) => (
-  <div>
-      {name}
-  </div>
-);
   componentWillUnmount() {
 
   }
