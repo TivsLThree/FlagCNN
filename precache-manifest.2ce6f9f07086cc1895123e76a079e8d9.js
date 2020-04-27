@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b0caac9ecfd596e498903cf29097cf10",
+    "revision": "a2547d7bb366bec7e97942ed5f73f7a5",
     "url": "/FlagCNN/index.html"
   },
   {
-    "revision": "857a8237a753cd2fed3e",
+    "revision": "60acb3d6c0e2764bbd87",
     "url": "/FlagCNN/static/css/main.d1b05096.chunk.css"
   },
   {
-    "revision": "47df6210ff9c5730e29d",
-    "url": "/FlagCNN/static/js/2.9fe3b46c.chunk.js"
+    "revision": "65c0b57d85b8bdafa3d9",
+    "url": "/FlagCNN/static/js/2.06881b8d.chunk.js"
   },
   {
-    "revision": "203136b256d73b86d9b5f7bd77fb7e0d",
-    "url": "/FlagCNN/static/js/2.9fe3b46c.chunk.js.LICENSE.txt"
+    "revision": "5e2252a167034352fa7bed0a873eaa75",
+    "url": "/FlagCNN/static/js/2.06881b8d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "857a8237a753cd2fed3e",
-    "url": "/FlagCNN/static/js/main.ec0b5fc1.chunk.js"
+    "revision": "60acb3d6c0e2764bbd87",
+    "url": "/FlagCNN/static/js/main.d52f813a.chunk.js"
   },
   {
     "revision": "7c2e61c559a4b9df9d20",
