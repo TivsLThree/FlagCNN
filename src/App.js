@@ -4,7 +4,7 @@ import './App.css';
 import {Container, Row, Col} from 'react-bootstrap'
 //import Image from 'react'
 const tf = require('@tensorflow/tfjs');
-const buildPath = (true) ? "http://localhost:3000/FlagCNN"  : "https://TivsLThree.github.io/FlagCNN/";
+const buildPath = (false) ? "http://localhost:3000/FlagCNN"  : "https://TivsLThree.github.io/FlagCNN/";
 const names = {
     "ad": "Andorra",
     "ae": "United Arab Emirates",
@@ -418,8 +418,8 @@ componentDidMount() {
       this.ctx.drawImage(img, 0,0);
       var imgData = this.ctx.getImageData(0,0,this.w,this.h);
       //console.log(imgData.data[0])
-      img = tf.browser.fromPixels(imgData).resizeBilinear([16,12])
-      img = img.reshape([1,12,16,3])
+      img = tf.browser.fromPixels(imgData).resizeBilinear([32,24])
+      img = img.reshape([1,24,32,3])
       res = this.model.predict(img)
       var guess = res.dataSync();
       console.log(guess);
